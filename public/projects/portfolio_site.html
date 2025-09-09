@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1">
+        <title>Portfolio Site</title>
+        <link rel="stylesheet" href="../css/site.css">
+        <link rel="icon" href="../favicon.ico">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li id="projects-menu">
+                        <a href="../projects.html">Projects</a>
+                        <ul>
+                            <li><a href="portfolio_site.html">Portfolio</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Portfolio Website</h1>
+            <div>
+                <div class="info-row">
+                    <div class="info-text">
+                        <h2>Contact Form</h2>
+                        <p>The contact form is generated via Javascript functions when the Contact Me button is clicked. While it would be better from a performance perspective to have a pre-built form that is hidden or revealed, this made for a good exercise in document fragments and dynamic node selection.</p>
+                    </div>
+                    <img class="img-right" src="../img/ContactForm.png" alt="A snapshot of the home page's contact form.">
+                </div>
+                <div class="info-row">
+                    <div class="info-text">
+                        <h2>API Integration</h2>
+                        <p>When the contact form is submitted, it conatcts an endpoint running on a Node.js server. That API translates the form details to the <a href="https://resend.com" target="_blank">Resend</a> API, which sends an email containing the sender's details and message. A dedicated inbox at samuel@samueldaley.com is where the messages are sent to.</p>
+                    </div>
+                    <img class="img-left" src="../img/NodeServer.png" alt="A picture of the API function code.">
+                </div>
+                <div class="info-row">
+                    <div class="info-text">
+                        <h2>Responsiveness</h2>
+                        <p>Media Queries are present for a few breakpoints to allow the site to adjust gracefully to any screen size. The CSS grid allowed the layout to easily change to new arrangements as needed.</p>
+                    </div>
+                    <img class="img-right" src="../img/MobileHomepage.png" alt="The view of the home page as it would appear on a phone.">
+                </div>
+            </div>
+        </main>
+        <footer>
+            &copy; Samuel Daley, 2025. All Rights Reserved.
+        </footer>
+        <script src="../js/app.js"></script>
+    </body>
+</html>
